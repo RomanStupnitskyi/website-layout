@@ -1,0 +1,127 @@
+header {
+	width: 100%;
+	justify-content: center;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+
+	menu {
+		display: flex;
+		gap: 40px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+		color: $primary;
+
+		.menu-item {
+			user-select: none;
+			-webkit-user-select: none;
+			transition: 0.3s all;
+		}
+
+		.menu-item:hover {
+			cursor: pointer;
+			opacity: 0.8;
+		}
+	}
+
+	.company-name {
+		font-family: $fontSecondary;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.01em;
+		color: $primary;
+		user-select: none;
+	}
+
+	.social-media {
+		display: flex;
+		gap: 20px;
+
+		.social-media-item {
+			display: flex;
+			width: 46px;
+			height: 49px;
+			justify-content: center;
+			align-items: center;
+			transform: rotate(30.5deg);
+			transition: 0.3s all;
+			background-image: url(../img/ellipse.svg);
+
+			img {
+				transform: rotate(-30.5deg);
+			}
+
+			&:hover {
+				opacity: 0.8;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.header-content {
+	width: max-content;
+	margin-top: 150px;
+	display: flex;
+	gap: 100px;
+
+	.header-info {
+		.header-title {
+			display: grid;
+			max-width: 500px;
+			font-weight: 400;
+			font-size: 87px;
+			line-height: 99.8%;
+			letter-spacing: -0.01em;
+			align-items: end;
+
+			&::after {
+				content: "";
+				position: absolute;
+				background-color: $primarySecond;
+				height: 20px;
+				width: 310px;
+				z-index: -1;
+			}
+		}
+
+		.header-description {
+			max-width: 500px;
+			margin: 30px 0 60px 0;
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 146.3%;
+			letter-spacing: 0.02em;
+		}
+	}
+
+	.header-img {
+		.header-picture {
+			width: 720px;
+			height: 520px;
+			background-image: url(../img/header_image.png);
+
+			.picture-ellipse {
+				background-image: url(../img/HeaderEllipse.svg);
+				position: absolute;
+				width: 600px;
+				height: 500px;
+				z-index: -1;
+			}
+
+			.picture-background {
+				background-image: url(../img/HeaderPictureBackground.png);
+				position: absolute;
+				width: 450px;
+				height: 630px;
+				z-index: -1;
+				left: 58%;
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+// Container
+$containerWidth: 1400;
+$containerPadding: 50;
+
+// Breakpoints
+@use "sass:math";
+$breakpoint1450: 1449.98 + px;
+$breakpoint1200: 1199.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint576: 575.98 + px;
+$breakpoint480: 467.98 + px;
+
+// Colors
+$primary: #331b3b;
+$primarySecond: #fdc221;
+$secondary: #ffffff;
+
+// Fonts
+$fontMain: "Hind Vadodara", sans-serif;
+$fontSecondary: "Playfair Display", sans-serif;

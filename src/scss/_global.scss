@@ -1,0 +1,58 @@
+// #container, .container
+#container,
+.container {
+	max-width: ($containerWidth - $containerPadding) + px;
+	padding: $containerPadding + px;
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (max-width: $breakpoint1450) {
+		max-width: 1450px;
+	}
+
+	@media (max-width: $breakpoint992) {
+		max-width: 992px;
+	}
+
+	@media (max-width: $breakpoint768) {
+		max-width: 768px;
+	}
+
+	@media (max-width: $breakpoint480) {
+		max-width: none;
+	}
+}
+
+// body
+body {
+	font-family: $fontMain;
+}
+
+// header-button
+.header-button {
+	width: 207px;
+	height: 66px;
+	border-radius: 10px;
+	background: #331b3b;
+	color: $secondary;
+	padding: 20px 50px;
+	font-size: 17px;
+	line-height: 137.3%;
+	letter-spacing: 0.02em;
+	transition: 0.3s all;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+// bold-text
+.bold-text {
+	font-weight: 700;
+}
